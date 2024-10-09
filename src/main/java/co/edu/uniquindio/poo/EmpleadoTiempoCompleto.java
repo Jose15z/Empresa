@@ -7,6 +7,10 @@ public class EmpleadoTiempoCompleto extends Empleado {
         super(nombre, id);
         this.salarioMensual = salarioMensual;
     }
+    public int calcularSalario(){
+        int salario = salarioMensual;
+        return salario;
+    }
 
     public int getSalarioMensual() {
         return salarioMensual;
