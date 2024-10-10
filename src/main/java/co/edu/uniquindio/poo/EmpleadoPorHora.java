@@ -24,6 +24,10 @@ public class EmpleadoPorHora extends Empleado {
     public void setSalarioPorHora(int salarioPorHora) {
         this.salarioPorHora = salarioPorHora;
     }
+    @Override
+    public String toString() {
+        return "EmpleadoPorHora [horasTrabajadas=" + horasTrabajadas + ", salarioPorHora=" + salarioPorHora + super.toString() +"]";
+    }
 
    
     

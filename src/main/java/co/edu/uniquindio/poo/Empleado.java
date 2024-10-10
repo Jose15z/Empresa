@@ -20,5 +20,9 @@ public abstract  class Empleado {
     public void setId(String id) {
         this.id = id;
     }
+    @Override
+    public String toString() {
+        return "Empleado [nombre=" + nombre + ", id=" + id + "]";
+    }
     
 }

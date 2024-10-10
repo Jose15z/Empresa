@@ -19,6 +19,10 @@ public class EmpleadoTiempoCompleto extends Empleado {
     public void setSalarioMensual(int salarioMensual) {
         this.salarioMensual = salarioMensual;
     }
+    @Override
+    public String toString() {
+        return "EmpleadoTiempoCompleto [salarioMensual=" + salarioMensual +  super.toString() +"]";
+    }
     
 
 }

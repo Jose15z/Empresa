@@ -3,11 +3,17 @@ import java.util.Collection;
 import java.util.LinkedList;
 public class Empresa {
     private String nombre;
-    private Collection<Empleado> empleados;
+    public Collection<Empleado> empleados;
     private Collection<Proyecto> proyectos;
     public Empresa(String nombre){
         this.nombre = nombre;
         empleados = new LinkedList<>();
+    }
+
+    public void mostrarEmpleados(){
+        for (Empleado empleado : empleados) {
+            System.out.println(empleado.toString());
+        }
     }
     public String getNombre() {
         return nombre;
@@ -27,6 +33,8 @@ public class Empresa {
     public void setProyectos(Collection<Proyecto> proyectos) {
         this.proyectos = proyectos;
     }
+   
 
+    
     
 }

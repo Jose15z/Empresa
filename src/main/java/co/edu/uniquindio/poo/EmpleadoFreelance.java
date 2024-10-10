@@ -40,5 +40,10 @@ public class EmpleadoFreelance extends Empleado {
     public void setProyectos(Collection<Proyecto> proyectos) {
         this.proyectos = proyectos;
     }
-
+    @Override
+    public String toString() {
+        return "EmpleadoFreelance [proyectosCompletados=" + proyectosCompletados + ", salarioPorProyecto="
+                + salarioPorProyecto + ", proyectos=" + proyectos + super.toString() +"]";
+    }
+    
 }
